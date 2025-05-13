@@ -18,74 +18,71 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "ideas" },
+  { text: "business" },
+  { text: "UX" },
+  { text: "web apps" },
+  { text: "solutions" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 11, suffix: "+", label: "Projects Built" },
+  { value: 4, suffix: "", label: "Case Competitions" },
+  { value: 12, suffix: "+", label: "Technologies Used" },
+  { value: 10, suffix: "+", label: "Team Projects Completed" },
 ];
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logo3.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/figma.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/excel.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/airtable.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/firebase.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/git.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/googleforms.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/python.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/react.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/postman.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/ppt.png",
   },
 ];
 
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Growth Mindset",
+    desc: "Always curious and open to feedback, I love learning new technologies and improving how I work.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Team Collaboration",
+    desc: "Comfortable working in team settings. I’ve collaborated on projects during internships, case studies, and volunteer work.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Problem Solver",
+    desc: "From bug fixing to improving workflows, I enjoy breaking down challenges into simple, actionable steps.",
   },
 ];
 
@@ -147,39 +144,53 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Tech Intern – Africell Innovation Hub",
+    date: "May 2023 – July 2023",
+    imgPath: "", // not used
+    logoPath: "/images/africell.png",
+    quote: "Pair programming showed me how developers collaborate to solve real problems.",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Assisted in developing internal dashboards using React and Firebase.",
+      "Participated in daily standups and pair programming sessions with frontend devs.",
+      "Learned version control practices (Git, GitHub) and debugging tools.",
+      "Observed how UI/UX decisions were made during agile sprint planning.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Tech Intern – CinetPay",
+    date: "May 2024 – July 2024",
+    imgPath: "",
+    logoPath: "/images/cinetpay.png",
+    quote: "Working with product squads helped me understand real agile workflows.",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Shadowed backend and frontend developers working on payment dashboard features.",
+      "Worked with a team to test and document API endpoints (Postman, Swagger).",
+      "Helped QA team reproduce and log frontend bugs in Jira.",
+      "Built a small internal tool to auto-format financial data using Python scripts.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Community Cabinet Volunteer – uOttawa",
+    date: "Fall 2024",
+    imgPath: "",
+    logoPath: "/images/uottawa.png",
+    quote: "This project showed me how tech and sustainability can work hand in hand.",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Helped launch a sustainable on-campus donation system for unused items.",
+      "Co-managed the Google Forms & Airtable system to track inventory and student submissions.",
+      "Assisted in organizing the donation drives and updating the shared cabinet info portal.",
+    ],
+  },
+  {
+    title: "Facilitator – JA Ottawa (Financial Literacy Program)",
+    date: "Winter 2025",
+    imgPath: "",
+    logoPath: "/images/jaottawa.png",
+    quote: "Teaching taught me patience, clarity, and how to break down ideas for others.",
+    responsibilities: [
+      "Delivered budgeting and financial decision-making workshops to grade 8 students.",
+      "Used slide decks and real-life scenarios to teach financial basics in simple terms.",
+      "Answered student questions and facilitated group discussions.",
     ],
   },
 ];
@@ -201,46 +212,34 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+    name: "Languages I Speak",
+    mentions: "",
+    review: "French (native), English (professional)",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+    name: "Education",
+    mentions: "",
+    review: "B.Sc. Honours in Business Technology Management\nUniversity of Ottawa (Graduating 2025)",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+    name: "My Discipline — Gym Life",
+    mentions: "",
+    review: "I train 5–6 days a week. Fitness is more than just health — it’s my way of building consistency, mindset, and work ethic. Progress over excuses.",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+    name: "Books That Shape Me",
+    mentions: "",
+    review: "I’m passionate about psychology and power. My favorite reads: The 48 Laws of Power, The Laws of Human Nature, Think and Grow Rich, and Can’t Hurt Me.",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
+    name: "I Live & Breathe Sports",
+    mentions: "",
+    review: "Whether swimming laps or catching a late NBA game, I love the energy of sports. I play basketball regularly and appreciate competitive discipline.",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+    name: "Anime & Manga Fuel My Creativity",
+    mentions: "",
+    review: "My favorite anime/manga: Berserk, Vagabond, and Vinland Saga. They inspire me with themes of struggle, mastery, and honor.",
   },
 ];
 

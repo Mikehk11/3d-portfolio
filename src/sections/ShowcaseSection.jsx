@@ -5,30 +5,25 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AppShowcase = () => {
+const ShowcaseSection = () => {
   const sectionRef = useRef(null);
-  const rydeRef = useRef(null);
-  const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
+  const badhunterRef = useRef(null);
+  const financeRef = useRef(null);
+  const jiraRef = useRef(null);
 
   useGSAP(() => {
-    // Animation for the main section
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
       { opacity: 1, duration: 1.5 }
     );
 
-    // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [badhunterRef.current, financeRef.current, jiraRef.current];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
         card,
-        {
-          y: 50,
-          opacity: 0,
-        },
+        { y: 50, opacity: 0 },
         {
           y: 0,
           opacity: 1,
@@ -47,38 +42,49 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+          {/* BADHUNTER */}
+          <div ref={badhunterRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <a href="https://badhunter-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/badhunter-preview.png" alt="BADHUNTER App" />
+              </a>
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Track Workouts Like Quests with BADHUNTER — a Gamified Fitness App
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Built with React, Firebase & Framer Motion to make fitness more engaging.
               </p>
             </div>
           </div>
 
+          {/* FINANCE + JIRA */}
           <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+            <div className="project" ref={financeRef}>
+              <div className="image-wrapper bg-[#D9F5FF]">
+                <a
+                  href="https://automate-finances-with-python-yjpq4ltjsuy3jaojebvege.streamlit.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/finance-preview.png" alt="Finance Visualizer" />
+                </a>
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Finance Visualizer – Python Expense Tracker</h2>
             </div>
 
-            <div className="project" ref={ycDirectoryRef}>
+            <div className="project" ref={jiraRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <a
+                  href="https://jira-clone-sigma-ruddy.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/images/jira-preview.png" alt="Jira Clone" />
+                </a>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Jira Clone – Workspace & Task Manager</h2>
             </div>
           </div>
         </div>
@@ -87,4 +93,4 @@ const AppShowcase = () => {
   );
 };
 
-export default AppShowcase;
+export default ShowcaseSection;
