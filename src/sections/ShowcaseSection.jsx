@@ -77,14 +77,14 @@ const ShowcaseSection = () => {
             <div className="project" ref={jiraRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <a
-                  href="https://jira-clone-sigma-ruddy.vercel.app/"
+                  href="https://illuvium-mike.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/images/jira-preview.png" alt="Jira Clone" />
+                  <img src="/images/illuvium.png" alt="Illuvium 3D Project" />
                 </a>
               </div>
-              <h2>Jira Clone – Workspace & Task Manager</h2>
+              <h2>Illuvium Fighters – Interactive 3D Showcase</h2>
             </div>
           </div>
         </div>
